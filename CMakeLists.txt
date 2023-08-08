@@ -11,3 +11,6 @@ add_test(NAME tsp-heuristics-testsuits COMMAND tsp-heuristics-testsuits)
 # Chapter 1 / Problem 32
 add_subdirectory(chapter1/1-32)
 add_test(NAME integer-division-testsuit COMMAND integer-division-testsuit)
+# Chapter 3 / Problem 1
+add_subdirectory(chapter3/3-1)
+add_test(NAME correct-parantheses-testsuit COMMAND correct-parantheses-testsuit)
