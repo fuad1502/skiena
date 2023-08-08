@@ -14,3 +14,6 @@ add_test(NAME integer-division-testsuit COMMAND integer-division-testsuit)
 # Chapter 3 / Problem 1
 add_subdirectory(chapter3/3-1)
 add_test(NAME correct-parantheses-testsuit COMMAND correct-parantheses-testsuit)
+# Chapter 3 / Problem 2
+add_subdirectory(chapter3/3-3)
+add_test(NAME reverse-linked-list-testsuit COMMAND reverse-linked-list-testsuit)
