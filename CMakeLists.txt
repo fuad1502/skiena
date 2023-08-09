@@ -20,3 +20,6 @@ add_test(NAME reverse-linked-list-testsuit COMMAND reverse-linked-list-testsuit)
 # Chapter 3 / Problem 4
 add_subdirectory(chapter3/3-4)
 add_test(NAME stack-implementation-testsuit COMMAND stack-implementation-testsuit)
+# Chapter 3 / Problem 7
+add_subdirectory(chapter3/3-7)
+add_test(NAME dictionary-implementation-testsuit COMMAND dictionary-implementation-testsuit)
