@@ -5,6 +5,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 enable_testing()
 add_subdirectory(lib/googletest)
+add_subdirectory(lib/cli-adt)
 # Chapter 1 / Problem 30
 add_subdirectory(chapter1/1-30)
 add_test(NAME tsp-heuristics-testsuits COMMAND tsp-heuristics-testsuits)
