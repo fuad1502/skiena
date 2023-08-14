@@ -1,0 +1,2 @@
+a. Storage efficiency = 1/4 = 25 %
+b. Assume that the height of the tree is n. Therefore, (approximately) the number of leaf nodes is 2^n. The number of total nodes can be calculated as follows: sum(i = 1, n+1)(2^(i-1)) = (1-2^(n+1))/(1-2) = 2^(n+1) - 1. Therefore, data space = 2^n * 4, pointer space = (2^n - 1) * 2 * 2, storage efficiency = 2^n / (2^(n+1) - 1) = (approximately) 50 %. Note that if the pointer is still requires 4 bytes, the storage efficiency still is (approximately) 25 %.
