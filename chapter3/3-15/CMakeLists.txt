@@ -1,0 +1,5 @@
+add_executable(transform-balanced-tree-testsuit transform-balanced-tree-testsuit.cpp)
+target_sources(transform-balanced-tree-testsuit PRIVATE transform-balanced-tree.cpp)
+target_include_directories(transform-balanced-tree-testsuit PRIVATE ${PROJECT_SOURCE_DIR}/lib/cli-adt/include)
+target_link_libraries(transform-balanced-tree-testsuit PRIVATE cli-tree)
+target_link_libraries(transform-balanced-tree-testsuit PRIVATE gtest_main)
