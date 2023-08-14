@@ -1,0 +1,5 @@
+add_executable(check-height-balance-testsuit check-height-balance-testsuit.cpp)
+target_include_directories(check-height-balance-testsuit PRIVATE ${PROJECT_SOURCE_DIR}/lib/cli-adt/include)
+target_include_directories(check-height-balance-testsuit PRIVATE ${PROJECT_SOURCE_DIR}/chapter3/3-15/)
+target_link_libraries(check-height-balance-testsuit PRIVATE cli-tree)
+target_link_libraries(check-height-balance-testsuit PRIVATE gtest_main)

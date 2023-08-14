@@ -27,3 +27,6 @@ add_test(NAME dictionary-implementation-testsuit COMMAND dictionary-implementati
 # Chapter 3 / Problem 15
 add_subdirectory(chapter3/3-15)
 add_test(NAME transform-balanced-tree-testsuit COMMAND transform-balanced-tree-testsuit)
+# Chapter 3 / Problem 17
+add_subdirectory(chapter3/3-17)
+add_test(NAME check-height-balance-testsuit COMMAND check-height-balance-testsuit)
