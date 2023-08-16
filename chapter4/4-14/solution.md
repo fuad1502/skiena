@@ -1,3 +1,4 @@
+```
 merge_overlap(I):
     H = create_heap(I)
     m = (0,0) // current interval to merge
@@ -9,3 +10,4 @@ merge_overlap(I):
         else
             m.y = max(m.y, i.y)
     return L
+```
