@@ -1,6 +1,6 @@
 ```
 h_index(A):
-    sort_ascending(A)
+    sort_descending(A)
     for i from 1 to size(A)
         if(A[i] == i)
             return i
