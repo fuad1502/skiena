@@ -4,6 +4,3 @@
 [submodule "lib/cli-adt"]
 	path = lib/cli-adt
 	url = git@github.com:fuad1502/cli-adt.git
-[submodule "chapter4/4-44/lib/benchmark"]
-	path = chapter4/4-44/lib/benchmark
-	url = https://github.com/google/benchmark.git
