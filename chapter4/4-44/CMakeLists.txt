@@ -6,3 +6,4 @@ project(problem_4_44)
 
 enable_testing()
 add_subdirectory(testsuits)
+add_subdirectory(apps)

@@ -1,12 +1,14 @@
 #include "quick-sort.hpp"
 
+namespace QuickSort {
 void sortPartition(std::vector<std::string> &words, int begin, int end);
-
-void QuickSort::sort(std::vector<std::string> &words) {
-  sortPartition(words, 0, words.size() - 1);
 }
 
-void sortPartition(std::vector<std::string> &words, int begin, int end) {
+void QuickSort::sort(std::vector<std::string> &words) {
+  QuickSort::sortPartition(words, 0, words.size() - 1);
+}
+
+void QuickSort::sortPartition(std::vector<std::string> &words, int begin, int end) {
   if (begin >= end) {
     return;
   }
@@ -28,6 +30,6 @@ void sortPartition(std::vector<std::string> &words, int begin, int end) {
   swap(words[pivotIdx], words[placeIdx]);
   pivotIdx = placeIdx;
   // sort left and right partition
-  sortPartition(words, begin, pivotIdx - 1);
-  sortPartition(words, pivotIdx + 1, end);
+  QuickSort::sortPartition(words, begin, pivotIdx - 1);
+  QuickSort::sortPartition(words, pivotIdx + 1, end);
 }

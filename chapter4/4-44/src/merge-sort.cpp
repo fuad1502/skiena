@@ -4,26 +4,28 @@
 #include <string>
 #include <vector>
 
+namespace MergeSort {
 void sortPartition(std::vector<std::string> &words, int begin, int end);
 void mergePartition(std::vector<std::string> &words, int begin, int middle,
                     int end);
+}
 
 void MergeSort::sort(std::vector<std::string> &words) {
-  sortPartition(words, 0, words.size() - 1);
+  MergeSort::sortPartition(words, 0, words.size() - 1);
 }
 
-void sortPartition(std::vector<std::string> &words, int begin, int end) {
+void MergeSort::sortPartition(std::vector<std::string> &words, int begin, int end) {
   int middle = (begin + end) / 2;
   if (begin < middle) {
-    sortPartition(words, begin, middle);
+    MergeSort::sortPartition(words, begin, middle);
   }
   if (middle + 1 < end) {
-    sortPartition(words, middle + 1, end);
+    MergeSort::sortPartition(words, middle + 1, end);
   }
-  mergePartition(words, begin, middle, end);
+  MergeSort::mergePartition(words, begin, middle, end);
 }
 
-void mergePartition(std::vector<std::string> &words, int begin, int middle,
+void MergeSort::mergePartition(std::vector<std::string> &words, int begin, int middle,
                     int end) {
   int firstPartitionIdx = begin;
   int secondPartitionIdx = middle + 1;
