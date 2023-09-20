@@ -24,4 +24,9 @@ target_sources(unique-words-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/heap-sort.c
 target_sources(unique-words-testsuit PRIVATE test-vector.cpp)
 add_test(NAME unique-words-testsuit COMMAND unique-words-testsuit)
 
+add_executable(file-utility-testsuit file-utility-testsuit.cpp)
+target_sources(file-utility-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/file-utility.cpp)
+add_test(NAME file-utility-testsuit COMMAND file-utility-testsuit)
+configure_file(${CMAKE_SOURCE_DIR}/sample-file/alice29.txt ${CMAKE_BINARY_DIR}/testsuits/sample-file/alice29.txt COPYONLY)
+
 include_directories(${CMAKE_SOURCE_DIR}/include)
