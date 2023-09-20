@@ -18,4 +18,10 @@ target_sources(quick-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/quick-sort.cp
 target_sources(quick-sort-testsuit PRIVATE test-vector.cpp)
 add_test(NAME quick-sort-testsuit COMMAND quick-sort-testsuit)
 
+add_executable(unique-words-testsuit unique-words-testsuit.cpp)
+target_sources(unique-words-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/unique-words.cpp)
+target_sources(unique-words-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/heap-sort.cpp)
+target_sources(unique-words-testsuit PRIVATE test-vector.cpp)
+add_test(NAME unique-words-testsuit COMMAND unique-words-testsuit)
+
 include_directories(${CMAKE_SOURCE_DIR}/include)

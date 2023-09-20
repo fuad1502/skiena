@@ -8,8 +8,8 @@ int main(int argc, char *argv[]) {
 
   HeapSort::sort(testVector);
 
-  for(int i = 0; i < testVector.size(); i++) {
-    if(testVector[i] != referenceVector[i]) {
+  for (int i = 0; i < testVector.size(); i++) {
+    if (testVector[i] != referenceVector[i]) {
       return -1;
     }
   }
