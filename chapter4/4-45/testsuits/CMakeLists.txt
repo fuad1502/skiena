@@ -1,4 +1,8 @@
 add_executable(external-sort-testsuit external-sort-testsuit.cpp)
 target_sources(external-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/external-sort.cpp)
+target_sources(external-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/file-utility.cpp)
+target_sources(external-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/merge-sort.cpp)
+target_sources(external-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/file-heap.cpp)
 target_include_directories(external-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/include)
+configure_file(${CMAKE_SOURCE_DIR}/sample-file/alice29.txt ${CMAKE_BINARY_DIR}/testsuits/sample-file/alice29.txt COPYONLY)
 add_test(NAME external-sort-testsuit COMMAND external-sort-testsuit)
