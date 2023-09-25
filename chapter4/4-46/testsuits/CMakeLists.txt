@@ -1,0 +1,8 @@
+add_executable(parallel-sort-testsuit parallel-sort-testsuit.cpp)
+target_sources(parallel-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/parallel-sort.cpp)
+target_sources(parallel-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/merge-sort.cpp)
+target_sources(parallel-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/src/file-utility.cpp)
+target_sources(parallel-sort-testsuit PRIVATE test-vector.cpp)
+target_include_directories(parallel-sort-testsuit PRIVATE ${CMAKE_SOURCE_DIR}/include)
+add_test(NAME parallel-sort-testsuit COMMAND parallel-sort-testsuit)
+configure_file(${CMAKE_SOURCE_DIR}/sample-file/alice29.txt ${CMAKE_BINARY_DIR}/testsuits/sample-file/alice29.txt COPYONLY)

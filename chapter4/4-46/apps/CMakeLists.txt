@@ -1,0 +1,8 @@
+add_executable(bench bench.cpp)
+target_sources(bench PRIVATE ${CMAKE_SOURCE_DIR}/src/parallel-sort.cpp)
+target_sources(bench PRIVATE ${CMAKE_SOURCE_DIR}/src/merge-sort.cpp)
+target_sources(bench PRIVATE ${CMAKE_SOURCE_DIR}/src/file-utility.cpp)
+target_include_directories(bench PRIVATE ${CMAKE_SOURCE_DIR}/include)
+configure_file(${CMAKE_SOURCE_DIR}/sample-file/alice29.txt ${CMAKE_BINARY_DIR}/apps/sample-file/alice29.txt COPYONLY)
+find_package(benchmark REQUIRED)
+target_link_libraries(bench benchmark::benchmark)
