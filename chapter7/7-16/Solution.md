@@ -1,0 +1,2 @@
+For adjacency matrix, checking whether an edge exist in the graph takes constant time. We have to check all (u,v) pairs (n^2) and for each pair check row v for ones (n). Therefore, the total running time would be O(n^3).
+For adjacency list, for each edge on a vertex entry (u, v), add in all edges in v to u. Therefore, the expected running time would be O(mh), where h is the expected order of each vertex.
