@@ -1,0 +1,2 @@
+We can view the movies as a set of vertex V, and each customer an edge, connecting the two movies they would like to watch. To ensure that every customer get to watch both movies that they prefer while showing each movie only once, we have to put the two movies that a customer prefers on two different days. This looks like a vertex coloring problem.
+If the graph is bipartite, then a solution exist, and we can simply show movies of one color on Saturday, and of the other color on Sunday. If the graph is not bipartite, then there is no solution.
