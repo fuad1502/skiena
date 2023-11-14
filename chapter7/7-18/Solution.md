@@ -1,0 +1,1 @@
+If the graph is undirected, then a BFS leaf could not possibly be connected to another BFS leaf by a cross edge, therefore, removing all of them would not lead to an edge not having both vertex remaining in the graph. However, if the graph is directed, it is possible to have a cross edge, and therefore it is possible that the remaining vertices is not a vertex cover.
