@@ -1,0 +1,2 @@
+a. Convert the data structure from adjacency list to adjacency matrix if not already in adjacency martrix. Then, For each row v, check each pair of edges, e.g. (v,x) and (v,y) whether both exists, if it does, check (x,y).
+b. Assume that we already have both the adjacency list and adjacency matrix representation. To find triangles, for each edge (x,y) in the adjacency list, check for every vertex v, whether (x,v) and (y,v) exists in the adjacency matrix.
